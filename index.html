@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="he" dir="rtl"><head><meta charset="utf-8"><title>מודל תלת-ממדי · סגירת מרפסת הורים</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #EEF1F4; font-family: -apple-system, "Arial Hebrew", sans-serif; }
+  canvas { display: block; width: 100vw; height: 100vh; touch-action: none; }
+  .hint { position: fixed; top: 14px; right: 16px; background: rgba(255,255,255,.92); border-radius: 8px; padding: 8px 14px;
+          font-size: 14px; color: #3E3E46; box-shadow: 0 1px 6px rgba(0,0,0,.08); }
+</style></head>
+<body><canvas id="c"></canvas>
+<div class="hint" id="hint"><b>סגירת מרפסת הורים · מודל תלת-ממדי</b><br>גוררים כדי לסובב, וגלגלת העכבר מגדילה ומקטינה</div>
+<script>if (new URLSearchParams(location.search).get('view')) document.getElementById('hint').style.display = 'none';</script>
+<script src="three.min.js"></script>
+<script src="scene-data.js"></script>
+<script src="viewer.js"></script>
+</body></html>
